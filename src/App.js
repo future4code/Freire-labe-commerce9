@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
-import Filtros from './components/filtros';
-import Produtos from './components/produtos';
-import Carrinho from './components/carrinho';
+import Filtros from './Components/filtros';
+import Produtos from './Components/produtos';
+import Carrinho from './Components/carrinho';
 
 
 
@@ -37,10 +37,13 @@ export default class App extends React.Component {
   render() {
     return (
       <div>
+
+
+        
         <img src="https://picsum.photos/200/200"/>
         <h2>teeste</h2>
         <Produtos />
-        <Filtros texto={"testes"}/>
+        <Filtros texto="testes"/>
         <Carrinho />
 
 

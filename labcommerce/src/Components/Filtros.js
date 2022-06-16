@@ -1,5 +1,4 @@
-import React from "react";
-
+import React from 'react';
 
 
 
@@ -8,10 +7,14 @@ class Filtros extends React.Component {
     render() {
         return (
             <div>
-                <h2>{this.props.texto}</h2>
 
+                <label>{this.props.texto}</label>
+                
             </div>
+
+
         )
     }
 }
+
 export default Filtros;
