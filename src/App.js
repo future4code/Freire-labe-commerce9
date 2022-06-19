@@ -12,17 +12,17 @@ export default class App extends React.Component {
   // state = {
   //   listaProdutos: [
 
-  //     { id: 1, name: "Foguete da Missão Apollo 11", value: 10000.0, imageUrl: "https://picsum.photos/200/200" },
+  //     { id: 1, nome: "Foguete da Missão Apollo 11", value: 10000.0, imageUrl: "https://picsum.photos/200/200" },
 
-  //     { id: 2, name: "Foguete da Missão Apollo 1", value: 1.0, imageUrl: "https://picsum.photos/200/200" },
+  //     { id: 2, nome: "Foguete da Missão Apollo 1", value: 1.0, imageUrl: "https://picsum.photos/200/200" },
 
-  //     { id: 3, name: "pollo ", value: 1.0, imageUrl: "https://picsum.photos/200/200" },
+  //     { id: 3, nome: "pollo ", value: 1.0, imageUrl: "https://picsum.photos/200/200" },
 
-  //     { id: 4, name: "pollo ", value: 1.0, imageUrl: "https://picsum.photos/200/200" },
+  //     { id: 4, nome: "pollo ", value: 1.0, imageUrl: "https://picsum.photos/200/200" },
 
-  //     { id: 5, name: "pollo ", value: 1.0, imageUrl: "https://picsum.photos/200/200" },
+  //     { id: 5, nome: "pollo ", value: 1.0, imageUrl: "https://picsum.photos/200/200" },
 
-  //     { id: 6, name: "pollo ", value: 1.0, imageUrl: "https://picsum.photos/200/200" },
+  //     { id: 6, nome: "pollo ", value: 1.0, imageUrl: "https://picsum.photos/200/200" },
   //   ],
   //   vlrMinimo: '',
   //   vlrMaximo: '',

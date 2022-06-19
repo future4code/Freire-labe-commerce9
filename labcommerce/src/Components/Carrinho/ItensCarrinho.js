@@ -15,8 +15,8 @@ const ItemContainer = styled.div`
 export class ItensCarrinho extends React.Component {
   render() {
     return <ItemContainer>
-      <p>{this.props.cartItem.quantity}x</p>
-      <p>{this.props.cartItem.name}</p>
+      <p>{this.props.cartItem.qtd}x</p>
+      <p>{this.props.cartItem.nome}</p>
       <button 
         onClick={() => this.props.onRemoveProductFromCart(this.props.cartItem.id)}
       >

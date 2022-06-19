@@ -1,5 +1,6 @@
 import React from 'react'
-import { ProductCard } from './ProductCard'
+import { CardProduto } from './CardProduto'
+
 import styled from 'styled-components';
 
 const ProductsContainer = styled.div`
@@ -20,18 +21,18 @@ const ProductsGrid = styled.div`
   padding: 16px;
 `
 
-export class Products extends React.Component {
+export class Produtos extends React.Component {
 
   state = {
     sort: 'DECRESCENTE'
   }
 
   getFilteredAndOrderedList = () => {
-    return this.props.products
-      .filter((product) => this.props.maxFilter ? product.price < this.props.maxFilter : true)
-      .filter((product) => this.props.minFilter ? product.price > this.props.minFilter : true)
-      .filter((product) => this.props.nameFilter ? product.name.includes(this.props.nameFilter) : true)
-      .sort((a, b) => this.state.sort === 'CRESCENTE' ? a.price - b.price : b.price - a.price)
+    return this.props.produtos
+      .filter((produto) => this.props.maxFilter ? produto.valor < this.props.maxFilter : true)
+      .filter((produto) => this.props.minFilter ? produto.valor > this.props.minFilter : true)
+      .filter((produto) => this.props.nameFilter ? produto.name.includes(this.props.nameFilter) : true)
+      .sort((a, b) => this.state.sort === 'CRESCENTE' ? a.valor - b.valor : b.valor - a.valor)
   }
 
   onChangeSort = (event) => {
@@ -52,9 +53,9 @@ export class Products extends React.Component {
         </label>
       </ProductsHeader>
       <ProductsGrid>
-        {filteredAndOrderedList.map((product) => {
-          return <ProductCard
-            product={product}
+        {filteredAndOrderedList.map((produto) => {
+          return <CardProduto
+            produto={produto}
             onAddProductToCart={this.props.onAddProductToCart}
           />
         })}
