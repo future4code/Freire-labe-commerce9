@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 
-const FiltersContainer = styled.div`
+const FiltroContainer = styled.div`
   border: 1px solid black;
   padding: 8px;
 `;
@@ -13,9 +13,9 @@ const InputContainer = styled.label`
   margin-bottom: 8px;
 `
 
-export class Filters extends React.Component {
+export class Filtro extends React.Component {
   render() {
-    return <FiltersContainer>
+    return <FiltroContainer>
       <h3>Filtros</h3>
         <InputContainer>
           Valor mínimo:
@@ -37,10 +37,10 @@ export class Filters extends React.Component {
           Busca por nome:
           <input
             type="text"
-            value={this.props.nameFilter}
-            onChange={this.props.onChangeNameFilter}
+            value={this.props.nomeFilter}
+            onChange={this.props.onChangenomeFilter}
           />
         </InputContainer>
-    </FiltersContainer>
+    </FiltroContainer>
   }
 }
