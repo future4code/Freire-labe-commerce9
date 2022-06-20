@@ -64,7 +64,7 @@ class App extends React.Component {
   state = {
     minFilter: "",
     maxFilter: "",
-    nomeFilter: '',
+    nameFilter: '',
     productsInCart: []
   }
 
@@ -125,16 +125,16 @@ class App extends React.Component {
         <Filtro
           minFilter={this.state.minFilter}
           maxFilter={this.state.maxFilter}
-          nomeFilter={this.state.nomeFilter}
+          nameFilter={this.state.nameFilter}
           onChangeMinFilter={this.onChangeMinFilter}            
           onChangeMaxFilter={this.onChangeMaxFilter}            
-          onChangenomeFilter={this.onChangenomeFilter}                  
+          onChangeNameFilter={this.onChangeNameFilter}                  
         />
         <Produtos 
           produtos={produtos}
           minFilter={this.state.minFilter}
           maxFilter={this.state.maxFilter}
-          nomeFilter={this.state.nomeFilter}
+          nameFilter={this.state.nameFilter}
           onAddProductToCart={this.onAddProductToCart}
         />
         <Carrinho

@@ -37,8 +37,8 @@ export class Filtro extends React.Component {
           Busca por nome:
           <input
             type="text"
-            value={this.props.nomeFilter}
-            onChange={this.props.onChangenomeFilter}
+            value={this.props.nameFilter}
+            onChange={this.props.onChangeNameFilter}
           />
         </InputContainer>
     </FiltroContainer>
